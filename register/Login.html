@@ -1,0 +1,56 @@
+<html>
+<head>
+       <title>تـسجيل مستخدم جديد - تسجيل الدخول</title>
+	   <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+
+<div class="alert">
+  <p class="text">هذه الصفحة مزالت في حالة التطوير</p>
+</div>
+
+   <div class="a">
+   <IMG SRC="muslim.gif">
+<p>مسلم كرافت</p>
+
+</div>
+
+			 
+    <div class="form">
+	<div class="button-box">
+	    <div id="btn"></div>
+	<button type="button" class="toggle-btn" onclick="login()">تسجيل الدخول</button>
+	<button type="button" class="toggle-btn" onclick="register()">تسجيل مستخدم جديد</button>
+	</div>
+	<div class="social-icons">
+	    <img src="fb.png">
+		<img src="tw.png">
+		<img src="gp.png">
+	</div>
+	 <form id="login" class="input-group">
+	     <input type="text" class="input-field" placeholder="إسم المستخدم" required>
+		 <input type="text" class="input-field" placeholder="إدخال كلمة السر" required>
+		 <input type="checkbox" class="check-box"><span>تذكر كلمة السر</span>
+		 <button type="submit" class="submit-btn">دخول</button>
+		 </form>
+	<form id="register" class="input-group">
+	     <input type="text" class="input-field" placeholder="إسم المستخدم" required>
+		 <input type="email" class="input-field" placeholder="البريد الإلكتروني" required>
+		 <input type="text" class="input-field" placeholder="إدخال كلمة السر" required>
+		 <input type="checkbox" class="check-box"><span>أوافق على الشروط و القواعد المطروحة</span>
+		 <button type="submit" class="submit-btn">تسجيل</button>
+		 </form>
+	</div>
+	
+     <script>
+	 var x = document.getElementById("login");
+	 var y = document.getElementById("register");
+	 var z = document.getElementById("btn");
+	 
+	 function register(){ x.style.left = "-400px"; y.style.left = "50px"; z.style.left = "110px";}
+	 function login(){ x.style.left = "50px"; y.style.left = "450px"; z.style.left = "0px";}
+	 
+	 </script>
+  
+</body>
+</html>
